@@ -132,7 +132,7 @@ namespace TraverseFiles {
                 } else {
                     switch(childControl.GetType().Name) {
                         case "Button":
-                            ((Button)childControl).BackColor = ColorFromHexCode("8E8F90");
+                            ((Button)childControl).BackColor = ColorFromHexCode("107C10");
                             break;
                     }
                 }
@@ -159,7 +159,7 @@ namespace TraverseFiles {
             this.StartPosition = FormStartPosition.CenterScreen;
             this.WindowState = FormWindowState.Normal;
             this.Text = GetResourceString("FormText");
-            this.BackColor = ColorFromHexCode("F7F7F7");            
+            this.BackColor = ColorFromHexCode("00A4EF");            
         }
 
         private void FormTraverseFiles_Load(object sender, EventArgs e) {
