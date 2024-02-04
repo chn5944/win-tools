@@ -158,11 +158,11 @@ namespace TraverseFiles {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             this.WindowState = FormWindowState.Normal;
-            this.Text = GetResourceString("FormText");
             this.BackColor = ColorFromHexCode("00A4EF");            
         }
 
         private void FormTraverseFiles_Load(object sender, EventArgs e) {
+            this.Text = GetResourceString("FormText");
             SetCtrl(this);
             this.TxtFiles.ScrollBars = ScrollBars.Both;
         }

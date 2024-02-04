@@ -117,25 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="BtnChooseDirText" xml:space="preserve">
+  <data name="FormTraverseFiles.BtnChooseDirText" xml:space="preserve">
     <value>选择文件夹</value>
   </data>
-  <data name="BtnCopyText" xml:space="preserve">
+  <data name="FormTraverseFiles.BtnCopyText" xml:space="preserve">
     <value>复制到剪切板</value>
   </data>
-  <data name="ChkContainSubFolderText" xml:space="preserve">
+  <data name="FormTraverseFiles.ChkContainSubFolderText" xml:space="preserve">
     <value>包含子文件夹</value>
   </data>
-  <data name="ChkNotFullPathText" xml:space="preserve">
+  <data name="FormTraverseFiles.ChkNotFullPathText" xml:space="preserve">
     <value>不输出全路径</value>
   </data>
-  <data name="CopyTip" xml:space="preserve">
+  <data name="FormTraverseFiles.CopyTip" xml:space="preserve">
     <value>复制完成!</value>
   </data>
-  <data name="FormText" xml:space="preserve">
+  <data name="FormTraverseFiles.FormText" xml:space="preserve">
     <value>遍历指定文件夹下文件</value>
   </data>
-  <data name="SetColorException" xml:space="preserve">
+  <data name="FormTraverseFiles.SetColorException" xml:space="preserve">
     <value>无效的颜色代码格式!</value>
   </data>
 </root>

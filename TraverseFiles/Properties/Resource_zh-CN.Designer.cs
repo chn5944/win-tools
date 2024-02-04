@@ -63,63 +63,63 @@ namespace TraverseFiles.Properties {
         /// <summary>
         ///   查找类似 选择文件夹 的本地化字符串。
         /// </summary>
-        internal static string BtnChooseDirText {
+        internal static string FormTraverseFiles_BtnChooseDirText {
             get {
-                return ResourceManager.GetString("BtnChooseDirText", resourceCulture);
+                return ResourceManager.GetString("FormTraverseFiles.BtnChooseDirText", resourceCulture);
             }
         }
         
         /// <summary>
         ///   查找类似 复制到剪切板 的本地化字符串。
         /// </summary>
-        internal static string BtnCopyText {
+        internal static string FormTraverseFiles_BtnCopyText {
             get {
-                return ResourceManager.GetString("BtnCopyText", resourceCulture);
+                return ResourceManager.GetString("FormTraverseFiles.BtnCopyText", resourceCulture);
             }
         }
         
         /// <summary>
         ///   查找类似 包含子文件夹 的本地化字符串。
         /// </summary>
-        internal static string ChkContainSubFolderText {
+        internal static string FormTraverseFiles_ChkContainSubFolderText {
             get {
-                return ResourceManager.GetString("ChkContainSubFolderText", resourceCulture);
+                return ResourceManager.GetString("FormTraverseFiles.ChkContainSubFolderText", resourceCulture);
             }
         }
         
         /// <summary>
         ///   查找类似 不输出全路径 的本地化字符串。
         /// </summary>
-        internal static string ChkNotFullPathText {
+        internal static string FormTraverseFiles_ChkNotFullPathText {
             get {
-                return ResourceManager.GetString("ChkNotFullPathText", resourceCulture);
+                return ResourceManager.GetString("FormTraverseFiles.ChkNotFullPathText", resourceCulture);
             }
         }
         
         /// <summary>
         ///   查找类似 复制完成! 的本地化字符串。
         /// </summary>
-        internal static string CopyTip {
+        internal static string FormTraverseFiles_CopyTip {
             get {
-                return ResourceManager.GetString("CopyTip", resourceCulture);
+                return ResourceManager.GetString("FormTraverseFiles.CopyTip", resourceCulture);
             }
         }
         
         /// <summary>
         ///   查找类似 遍历指定文件夹下文件 的本地化字符串。
         /// </summary>
-        internal static string FormText {
+        internal static string FormTraverseFiles_FormText {
             get {
-                return ResourceManager.GetString("FormText", resourceCulture);
+                return ResourceManager.GetString("FormTraverseFiles.FormText", resourceCulture);
             }
         }
         
         /// <summary>
         ///   查找类似 无效的颜色代码格式! 的本地化字符串。
         /// </summary>
-        internal static string SetColorException {
+        internal static string FormTraverseFiles_SetColorException {
             get {
-                return ResourceManager.GetString("SetColorException", resourceCulture);
+                return ResourceManager.GetString("FormTraverseFiles.SetColorException", resourceCulture);
             }
         }
     }

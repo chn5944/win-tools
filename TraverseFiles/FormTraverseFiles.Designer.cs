@@ -24,6 +24,7 @@ namespace TraverseFiles {
         /// 使用代码编辑器修改此方法的内容。
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTraverseFiles));
             this.BtnChooseDir = new System.Windows.Forms.Button();
             this.TxtDirPath = new System.Windows.Forms.TextBox();
             this.TxtFiles = new System.Windows.Forms.TextBox();
@@ -104,6 +105,7 @@ namespace TraverseFiles {
             this.Controls.Add(this.TxtFiles);
             this.Controls.Add(this.TxtDirPath);
             this.Controls.Add(this.BtnChooseDir);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormTraverseFiles";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FormTraverseFiles_Load);

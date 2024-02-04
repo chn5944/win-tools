@@ -39,4 +39,7 @@ A collection of Windows system tools developed based on C #. net framework
 2) 勾选"不输出全路径"会只输出文件名，不带有路径。
 
 #### 示例
-![示例图](/pic/traverse_file_cn.png)
+![](/pic/traverse_file_e.g._1_cn.png)
+![](/pic/traverse_file_e.g._2_cn.png)
+![](/pic/traverse_file_e.g._3_cn.png)
+![](/pic/traverse_file_e.g._4_cn.png)
