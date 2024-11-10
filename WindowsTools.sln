@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraverseFiles", "TraverseFi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatchGenerateCode", "BatchGenerateCode\BatchGenerateCode.csproj", "{91071255-AEB6-4EBF-B226-ADF3E2AFD772}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatchRenameFiles", "BatchRenameFiles\BatchRenameFiles.csproj", "{AF6D3036-48C0-4F73-A816-C022D4644A33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{91071255-AEB6-4EBF-B226-ADF3E2AFD772}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91071255-AEB6-4EBF-B226-ADF3E2AFD772}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91071255-AEB6-4EBF-B226-ADF3E2AFD772}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF6D3036-48C0-4F73-A816-C022D4644A33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF6D3036-48C0-4F73-A816-C022D4644A33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF6D3036-48C0-4F73-A816-C022D4644A33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF6D3036-48C0-4F73-A816-C022D4644A33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
