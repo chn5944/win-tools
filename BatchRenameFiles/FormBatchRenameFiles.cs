@@ -19,7 +19,10 @@ namespace BatchRenameFiles {
             ".jpg" ,".jpeg" ,".png" ,".gif" ,".bmp" ,".ico" ,".tiff" ,".tif", ".webp"
         };
 
-        private void RenameFolder(string folderPath, string destinationFolder, bool containSubFolder = false, string renamedFolderSuffix = "Renamed") {
+        private void RenameFolder(string folderPath, string destinationFolder, bool containSubFolder = false, string renamedFolderSuffix = "Renamed", bool preview = false) {
+            if (preview) {
+                TxtFiles.Text = TxtFiles.Text + Environment.NewLine + Environment.NewLine + "Directoty : " + destinationFolder;
+            }
             DirectoryInfo directoryInfo = new DirectoryInfo(folderPath);
             FileInfo[] fileInfos = directoryInfo.GetFiles();
             int filesCountDigit = fileInfos.Length.ToString().Length;
@@ -56,8 +59,11 @@ namespace BatchRenameFiles {
                     }
                     renamedFileName = "1" + renamedFileName;
                 }
-
-                fileInfo.CopyTo(destinationFolder + @"\" + renamedFileName + suffix);
+                if (preview) {
+                    TxtFiles.Text = TxtFiles.Text + Environment.NewLine + fileInfo.Name + " -> " + renamedFileName + suffix;
+                } else {
+                    fileInfo.CopyTo(destinationFolder + @"\" + renamedFileName + suffix);
+                }
             }
             if (containSubFolder) {
                 // 获取文件夹中的所有子文件夹
@@ -66,7 +72,7 @@ namespace BatchRenameFiles {
                 // 递归遍历每个子文件夹
                 // Recursively traverse each sub folder
                 foreach (DirectoryInfo subDirectory in subDirectories) {
-                    RenameFolder(subDirectory.FullName, destinationFolder + @"\" + subDirectory.Name + renamedFolderSuffix, containSubFolder, renamedFolderSuffix);
+                    RenameFolder(subDirectory.FullName, destinationFolder + @"\" + subDirectory.Name + renamedFolderSuffix, containSubFolder, renamedFolderSuffix,  preview);
                 }
             }
         }
@@ -92,8 +98,19 @@ namespace BatchRenameFiles {
 
         private void BtnPreview_Click(object sender, EventArgs e) {
             BtnPreview.Enabled = false;
-            string subFileNames = PreviewRenameFolder(TxtDirPath.Text.Trim());
-            TxtFiles.Text = subFileNames;
+            try {
+                if (!Directory.Exists(TxtDirPath.Text.Trim())) {
+                    throw new Exception("Unable to find folder!");
+                }
+                Stopwatch stopwatch = Stopwatch.StartNew();
+                string newFolderSuffix = "Renamed";
+                RenameFolder(TxtDirPath.Text.Trim(), TxtDirPath.Text.Trim() + newFolderSuffix, ChkContainSubFolder.Checked, newFolderSuffix, true);
+                stopwatch.Stop();
+                MessageBox.Show($"Success! Renamed files with suffix '{newFolderSuffix}', execution time: {stopwatch.ElapsedMilliseconds} ms");
+            } catch (Exception ex) {
+                MessageBox.Show(ex.Message);
+
+            }
             BtnPreview.Enabled = true;
         }
 
